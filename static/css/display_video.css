@@ -1,0 +1,15 @@
+body{
+    background-color: darkgoldenrod;
+}
+
+#video_feed{
+    border: 2px solid palegoldenrod;
+    
+    max-width: 100%;
+    height: auto;
+}
+
+#center_image{
+    text-align: center;
+}
+

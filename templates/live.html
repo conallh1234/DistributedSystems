@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Video Streaming App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/display_video.css') }}">
+  </head>
+  
+    <body>
+        <h1>Video Stream</h1>
+
+          <div id="center_image">
+            <form method="post" action="{{ url_for('filters') }}">
+            <input type="submit" value="Stop/Start" name="stop" />
+            <input type="submit" value="Grey" name="grey" />
+            <input type="submit" value="Negative" name="negative" />
+            <input type="submit" value="Screenshot" name="screenshot" />
+            <input type="submit" value="Start/Stop Recording" name="rec" />
+            <img id="video_feed" src="{{ url_for('video_feed') }}" />
+            </form>
+          </div>
+
+    </body>
+</html>
